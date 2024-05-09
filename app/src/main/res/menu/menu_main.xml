@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+    <item android:id="@+id/action_budget"
+        android:title="@string/action_budget"
+        android:icon="@drawable/ic_action_budget"
+        app:showAsAction="always" />
+    <item android:id="@+id/action_refresh_configuration"
+        android:title="@string/action_refresh_configuration"
+        android:icon="@drawable/ic_refresh_apps"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+</menu>

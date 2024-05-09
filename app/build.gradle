@@ -1,0 +1,97 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.audacious_software.phone_dashboard'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.audacious_software.phone_dashboard"
+        minSdkVersion 24
+        targetSdk 34
+        versionCode 76
+        versionName "76"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        manifestPlaceholders = [
+                appAuthRedirectScheme: "NOT-USED"
+        ]
+    }
+
+    ndkVersion '21.3.6528147'
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    packagingOptions {
+        resources {
+            excludes += ['META-INF/DEPENDENCIES', 'META-INF/LICENSE', 'META-INF/LICENSE.txt', 'META-INF/license.txt', 'META-INF/NOTICE', 'META-INF/NOTICE.txt', 'META-INF/notice.txt', 'META-INF/ASL2.0', 'META-INF/ASL-2.0.txt', 'META-INF/AL2.0', 'META-INF/LGPL-3.0.txt', 'META-INF/LGPL2.1', 'META-INF/*.kotlin_module']
+        }
+    }
+
+    signingConfigs {
+        release {
+            storeFile file(STORE_FILE)
+            storePassword STORE_PASSWORD
+            keyAlias KEY_ALIAS
+            keyPassword KEY_PASSWORD
+        }
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    buildTypes {
+        release {
+            debuggable false
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            buildConfigField("long", "VERSION_CODE", "${defaultConfig.versionCode}")
+            buildConfigField("String","VERSION_NAME","\"${defaultConfig.versionName}\"")        }
+        debug {
+            debuggable false
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField("long", "VERSION_CODE", "${defaultConfig.versionCode}")
+            buildConfigField("String","VERSION_NAME","\"${defaultConfig.versionName}\"")        }
+    }
+    lint {
+        warning 'InvalidPackage'
+    }
+
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.preference:preference:1.2.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test:core:1.5.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test:rules:1.5.0'
+    androidTestImplementation 'androidx.test:runner:1.5.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'androidx.test:core:1.5.0'
+    implementation 'androidx.test.ext:junit:1.1.5'
+    implementation 'androidx.test:rules:1.5.0'
+    implementation 'androidx.test:runner:1.5.2'
+    implementation 'androidx.test.espresso:espresso-core:3.5.1'
+    api 'com.google.gms:google-services:4.4.0'
+
+    implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.0"))
+
+    api project(path: ':Passive-Data-Kit')
+    implementation 'com.microsoft.appcenter:appcenter-analytics:5.0.2'
+    implementation 'com.microsoft.appcenter:appcenter-crashes:5.0.2'
+    implementation 'com.github.anrwatchdog:anrwatchdog:1.4.0'
+    implementation 'com.github.mfornos:humanize-slim:1.2.2'
+    implementation 'com.github.javiersantos:AppUpdater:2.7'
+}
+
+apply plugin: 'com.google.gms.google-services'  // Google Play services Gradle plugin

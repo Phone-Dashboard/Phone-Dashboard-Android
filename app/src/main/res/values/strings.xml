@@ -1,0 +1,308 @@
+<resources>
+    <string name="app_name">Phone Dashboard</string>
+
+    <string name="action_data_stream">Data Stream</string>
+    <string name="action_transmit_data">Transmit Data</string>
+
+    <string name="url_phone_dashboard_configuration">https://phone-dashboard.audacious-software.com/data/app-config.json</string>
+    <string name="url_phone_study_configuration">https://phone-dashboard.audacious-software.com/study/config.json</string>
+    <string name="url_phone_enroll">https://phone-dashboard.audacious-software.com/study/enroll-email.json</string>
+
+    <string name="url_opt_out">https://phone-dashboard.audacious-software.com/study/deactivate/%1$s.json</string>
+    <string name="url_opt_in">https://phone-dashboard.audacious-software.com/study/activate/%1$s.json</string>
+    <string name="url_latest_version">https://phone-dashboard.audacious-software.com/study/latest-version.json</string>
+
+    <string name="onboarding_sign_in">Welcome to Phone Dashboard. This app has been developed for the NYU Stanford Smartphone Study.\n\nTo continue, please enter your e-mail address below:</string>
+    <string name="hint_onboarding_email">E-Mail Address</string>
+
+    <string name="message_no_user_budgets">The selected configuration does not permit app budgets to be configured.\n\nTap the "Next" button above to continue.</string>
+
+    <string name="title_onboarding">Welcome!</string>
+    <string name="subtitle_onboarding">Phone Dashboard Setup</string>
+    <string name="toast_identifier_valid">E-mail validated. Continuing&#8230;</string>
+    <string name="toast_identifier_invalid">Invalid identifier. Please try again.</string>
+
+    <string name="action_sign_in">Sign In</string>
+    <string name="action_next_arrow">Next &#8250;</string>
+    <string name="action_done">Done</string>
+
+    <string name="numbered_list_app">#%1$d: %2$s</string>
+
+    <string name="action_refresh_apps">Refresh</string>
+    <string name="label_app_used_today">%1$s</string>
+    <string name="label_app_not_used_today">No usage observed.</string>
+
+    <string name="label_app_usage_remaining">Time Remaining: %1$s</string>
+    <string name="label_app_no_usage_resriction">No usage restrictions.</string>
+    <string name="label_app_usage_remaining_none">Budget exhausted until tomorrow.</string>
+    <string name="toast_blocking_app">Time budget for %1$s exhausted. Blocking until tomorrow&#8230;</string>
+
+    <string name="message_limit_reached_with_snooze">You have reached your limit of %1$d minutes. You may resume using it in %2$d minutes if you snooze the app limit.\n\nYou can revise your app limits in Phone Dashboard, effective tomorrow.</string>
+    <string name="message_limit_reached_with_snooze_single">You have reached your limit of 1 minute. You may resume using it in %1$d minutes if you snooze the app limit.\n\nYou can revise your app limits in Phone Dashboard, effective tomorrow.</string>
+    <string name="message_limit_reached">You have reached your limit of %1$d minutes. You cannot use this app until tomorrow.\n\nYou can revise your app limits in Phone Dashboard, effective tomorrow.</string>
+    <string name="message_limit_reached_single">You have reached your limit of 1 minute. You cannot use this app until tomorrow.\n\nYou can revise your app limits in Phone Dashboard, effective tomorrow.</string>
+
+    <string name="title_settings">Settings</string>
+    <string name="label_app_budget_status">App Usage Limits</string>
+    <string name="label_app_budget_status_active">Active</string>
+    <string name="label_app_budget_status_inactive">Inactive</string>
+
+    <string name="settings_data_actions">Data Actions</string>
+    <string name="settings_app_info">Application Information</string>
+    <string name="placeholder_app_version">(App Version Here)</string>
+    <string name="label_app_version">Application Version</string>
+
+    <string name="toast_uploading_data">Uploading data to the Phone Dashboard server&#8230;</string>
+    <string name="action_transmit_data_pending">%1$d Pending Transmission(s)</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_budget">Review Budget</string>
+
+    <string name="settings_acknowledgements">Acknowledgements</string>
+    <string name="creator_stfalcon" translatable="false">Stfalcon</string>
+    <string name="role_chatkit" translatable="false">ChatKit</string>
+    <string name="uri_chatkit" translatable="false">https://github.com/stfalcon-studio/ChatKit</string>
+    <string name="creator_audacious_software" translatable="false">Audacious Software</string>
+    <string name="role_passive_data_kit" translatable="false">Passive Data Kit</string>
+    <string name="uri_passive_data_kit" translatable="false">https://passivedatakit.org</string>
+    <string name="creator_microsoft" translatable="false">Microsoft</string>
+    <string name="role_hockeyapp" translatable="false">HockeyApp</string>
+    <string name="uri_hockeyapp" translatable="false">https://hockeyapp.net/</string>
+    <string name="creator_salomon_brys" translatable="false">Salomon Brys</string>
+    <string name="role_anr_watchdog" translatable="false">ANR-WatchDog</string>
+    <string name="uri_anr_watchdog" translatable="false">https://github.com/SalomonBrys/ANR-WatchDog</string>
+    <string name="creator_phil_jay" translatable="false">Phil Jay</string>
+    <string name="role_mp_android_chart" translatable="false">MPAndroidChart</string>
+    <string name="uri_mp_android_chart" translatable="false">https://github.com/PhilJay/MPAndroidChart</string>
+    <string name="creator_square" translatable="false">Square</string>
+    <string name="role_ok_http" translatable="false">OkHttp</string>
+    <string name="uri_ok_http" translatable="false">http://square.github.io/okhttp/</string>
+    <string name="creator_apache" translatable="false">Apache Software Foundation</string>
+    <string name="role_commons_libs" translatable="false">Apache Commons</string>
+    <string name="uri_commons_libs" translatable="false">https://commons.apache.org/</string>
+    <string name="creator_faster_xml" translatable="false">FasterXML</string>
+    <string name="role_jackson_xml" translatable="false">Jackson</string>
+    <string name="uri_jackson_xml" translatable="false">https://github.com/FasterXML/jackson-core</string>
+    <string name="creator_open_id" translatable="false">OpenID</string>
+    <string name="role_app_auth" translatable="false">AppAuth</string>
+    <string name="uri_app_auth" translatable="false">https://appauth.io/</string>
+
+    <string name="title_budget">%1$d of %2$d minutes allocated</string>
+    <string name="subtitle_budget">App Usage Budget</string>
+    <string name="placeholder_app_budget_status">(Budget Status Placeholder)</string>
+    <string name="action_save_budget">Save</string>
+
+    <string name="budget_unlimited">No usage restrictions</string>
+    <string name="budget_exempt">Exempt from usage restrictions</string>
+    <string name="budget_duration">Daily usage limit: %1$d minutes</string>
+    <string name="budget_duration_tomorrow">Effective tomorrow: %1$d minutes</string>
+    <string name="budget_duration_tomorrow_none">Effective tomorrow: No usage limits</string>
+
+    <string name="action_set_limit">Set Limit</string>
+    <string name="action_remove_limit">Clear Limit</string>
+    <string name="message_select_limit">Select the daily usage limit (in minutes):</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="title_existing_budget">Usage Limits Already Set</string>
+    <string name="message_existing_budget">You can revise your app limits again tomorrow.</string>
+    <string name="action_close">Close</string>
+
+    <string name="title_about_app">About Phone Dashboard</string>
+    <string name="title_app_usage_permissions">App Usage Permission</string>
+    <string name="title_setup_budget">Set App Usage Limits</string>
+    <string name="title_notification_permissions">Enable Notifications</string>
+
+    <string name="title_limits_initial">Set Immediate App Limits</string>
+
+    <string name="title_initial_limit_setup">Set App Limits</string>
+    <string name="message_initial_limit_setup">The limits that you choose on this screen will become active tomorrow.\n\nWhen you change your app limits in the future, those limits will become active on the NEXT calendar day.</string>
+
+    <string name="message_app_exempt">This app is exempt from usage limits.</string>
+    <string name="subtitle_app_limits">New limits effective tomorrow</string>
+
+    <string name="title_onboarding_conclusion">Final Notes</string>
+    <string name="title_app_limits">App Usage Limits</string>
+
+    <string name="title_limits_updated">App Limits Updated</string>
+    <string name="message_limits_updated">Your new app limits will take effect tomorrow.</string>
+
+    <string name="label_app_receives_subsidy">Receives Subsidy for Current Phase</string>
+    <string name="label_app_blocker_type">App Limit Type</string>
+    <string name="label_app_snooze_delay">Snooze Delay</string>
+    <string name="action_refresh_study_configuration">Refresh Study Configuration</string>
+
+    <string name="value_yes">Yes</string>
+    <string name="value_no">No</string>
+
+    <string name="blocker_type_none">No App Limits</string>
+    <string name="blocker_type_free_snooze">Free Snooze</string>
+    <string name="blocker_type_costly_snooze">Costly Snooze</string>
+    <string name="blocker_type_no_snooze">No Snooze</string>
+    <string name="label_snooze_delay_minutes">%1$d Minutes</string>
+
+    <string name="toast_config_update_failed">Unable to refresh configuration. Please check your network connection&#8230;</string>
+    <string name="toast_config_update_succeeded">Configuration updated successfully.</string>
+
+
+    <string name="hint_limit_minutes">App Usage Limit (Minutes)</string>
+
+    <string name="action_snooze_limit">Snooze App Limit</string>
+
+    <string name="message_app_snooze">Enter additional minutes you would like to be able to use %1$s:</string>
+    <string name="action_snooze_app">Snooze Limit</string>
+    <string name="hint_snooze_minutes">Additional Usage (Minutes)</string>
+    <string name="toast_app_snoozed">App usage limits will be temporarily lifted. You may resume using the app shortly.</string>
+
+    <string name="message_limit_approaching">Your daily limit for this app will expire in less than %1$d minutes of additional usage today.</string>
+
+    <string name="title_opt_out">Opt Out of Blocking?</string>
+    <string name="message_opt_out">Are you sure you want to opt-out of App Usage Limits?\n\nThis permanently removes your current limits and you will not be able to impose any future limits until the configuration update at the next survey.</string>
+    <string name="action_opt_out">Yes, Opt Out</string>
+
+    <string name="label_app_treatment_status">Study Status</string>
+    <string name="label_app_period_start">Start of Current Phase</string>
+    <string name="period_start_unknown">Unknown Phase Start</string>
+
+    <string name="title_invalid_email">Invalid E-Mail Address</string>
+    <string name="message_invalid_email">The provided e-mail address is not valid. Please enter a valid e-mail address.</string>
+
+    <string name="title_email_validated">Enrollment Successful</string>
+    <string name="message_email_validated">You were successfully enrolled in the Phone Use study. Your app code is\n\n%1$s\n\nYou will receive an e-mail with this code. Please record this 8-digit code in the survey to confirm your identity.</string>
+
+    <string name="label_app_code">App Code</string>
+
+    <string name="tab_today">Today</string>
+    <string name="tab_week">Week</string>
+    <string name="tab_treatment">This Phase</string>
+
+    <string name="toast_app_code_copied">App Code "%1$s" copied to clipboard&#8230;</string>
+    <string name="settings_user_info">Phone Dashboard Settings</string>
+    <string name="title_settings_acknowledgements">Acknowledgements</string>
+
+    <string name="settings_irb_number">IRB-FY2020-3618</string>
+    <string name="settings_irb_summary">NYU IRB Number</string>
+
+    <string name="settings_more_information">Application Details</string>
+
+    <string name="action_refresh_configuration">Refresh Configuration</string>
+    <string name="toast_refreshing_configuration">Refreshing configuration from server&#8230;</string>
+
+    <string name="title_limits_initial_updated">Set Initial Limits?</string>
+    <string name="message_limits_initial_updated_single">You have set the initial limit for one app.\n\nThese limits will be applied tomorrow.</string>
+    <string name="message_limits_initial_updated">You have set the initial limits for %1$d apps.\n\nThese limits will be applied tomorrow.</string>
+
+    <string name="toast_opt_out_failed">Unable to opt out at this moment. Please verify that you have an active network connection and try again&#8230;</string>
+    <string name="toast_opt_out_successful">You have successfully opted-out of this phase of the experiment.</string>
+    <string name="toast_opt_out_failed_try_again">Unable to opt out at this moment. Please try again in a few moments.</string>
+
+    <string name="label_app_treatment_status_active">Opt-out of App Usage Limits</string>
+    <string name="label_app_treatment_status_inactive">Opted-out of App Usage Limits</string>
+
+    <string name="dialog_message_snooze_free">You may resume using %1$s after %2$s.\n\nHow many additional minutes would you like?</string>
+    <string name="dialog_message_snooze_costly">You may resume using %1$s after %2$s for $%3$.2f.\n\nHow many additional minutes would you like?</string>
+    <string name="dialog_message_snooze_active">You may resume using %1$s after %2$s.</string>
+
+    <string name="message_limit_approaching_single">Your daily limit for this app will expire in less than one minute of additional usage.</string>
+
+    <string name="title_app_limits_required">Set App Limits</string>
+    <string name="message_app_limits_required">In this part of the study, Phone Dashboard will enforce limits on your daily app usage.\n\nPlease pause and return to your survey.\n\nTap Continue to set your app usage limits.</string>
+
+    <string name="title_set_snooze_cost">Specify Cost of Snooze</string>
+    <string name="dialog_message_app_snooze_cost">You will receive extra rewards of $%1$.2f minus snooze costs. What price would you like to set per snooze?</string>
+    <string name="dialog_message_app_snooze_cost_tip">You might prefer to set a higher price if you would like to use this feature to help you commit to your goals.</string>
+    <string name="hint_snooze_cost">Cost of Snooze</string>
+    <string name="action_save_snooze_cost">Save Snooze Cost</string>
+    <string name="format_dollars">%1$.2f</string>
+
+    <string name="toast_budget_limit">Please enter a cost between $%1$.2f and $%2$.2f&#8230;</string>
+
+    <string name="label_app_usage_limit_function">App Usage Limit Function</string>
+    <string name="message_select_limit_zero">Set the limit to "0" to disable usage of the app.</string>
+
+    <string name="action_upload_data">Upload Data</string>
+    <string name="summary_upload_data">Send data to Phone Dashboard cloud.</string>
+
+    <string name="subtitle_today">Total Use Today</string>
+    <string name="subtitle_daily_average">Avg. Daily Use: %1$s to %2$s</string>
+
+    <string name="title_average_daily_usage">Average Daily Usage:\n%1$s to %2$s</string>
+    <string name="title_average_daily_usage_single">Daily Usage: %1$s</string>
+    <string name="title_average_daily_usage_today">Today\'s Usage</string>
+
+    <string name="subtitle_remaining_snooze_budget">Snooze Budget: $%1$.2f</string>
+    <string name="value_app_remaining_budget">$%1$.2f</string>
+    <string name="label_app_remaining_budget">Remaining Snooze Budget</string>
+
+    <string name="label_home_screen">Home Screen</string>
+
+    <string name="message_database_maintenance">Phone Dashboard is performing database maintenance&#8230;</string>
+
+    <string name="title_window_management">Allow Window Management</string>
+    <string name="toast_cannot_parse_snooze">Could not parse provided value. Please try again&#8230;</string>
+
+    <string name="apps_web_browsers">Browsers</string>
+    <string name="apps_youtube">YouTube</string>
+    <string name="apps_facebook">Facebook</string>
+    <string name="apps_instagram">Instagram</string>
+    <string name="apps_snapchat">Snapchat</string>
+    <string name="apps_twitter">Twitter</string>
+    <string name="apps_whatsapp">WhatsApp</string>
+
+    <string name="note_title_attention_needed">Attention Needed!</string>
+    <string name="note_message_attention_needed">Tap to fix Phone Dashboard issue.</string>
+
+    <string name="foreground_channel_id">Phone Dashboard</string>
+
+    <string name="action_skip">Skip and Exit</string>
+
+    <string name="dialog_title_confirm_dirty_save">Save Limits?</string>
+    <string name="dialog_message_confirm_dirty_save">You have unsaved changes to your limits.\n\nWould you like to save them before exiting this screen?</string>
+
+    <string name="title_set_snooze_delay">Set Snooze Delay</string>
+
+    <string-array name="snooze_delay_options">
+        <item>Snooze After 1 Minute</item>
+        <item>Snooze After 2 Minutes</item>
+        <item>Snooze After 5 Minutes</item>
+        <item>Snooze After 10 Minutes</item>
+        <item>Snooze After 20 Minutes</item>
+        <item>Snooze Immediately</item>
+        <item>Disable Snoozes</item>
+    </string-array>
+
+    <string-array name="snooze_delay_values">
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+
+    <string name="label_app_current_snooze_delay">Current Snooze Delay</string>
+    <string name="label_app_change_snooze_delay">Change Snooze Delay</string>
+    <string name="label_app_change_snooze_delay_summary">Effective Tomorrow: %1$d Minutes</string>
+    <string name="label_app_change_snooze_delay_summary_one_minute">Effective Tomorrow: 1 Minute</string>
+    <string name="label_app_change_snooze_delay_summary_none">Effective Tomorrow: None</string>
+    <string name="label_app_change_snooze_delay_summary_disabled">Effective Tomorrow: Snooze Disabled</string>
+    <string name="title_change_snooze_delay">Change Snooze Delay</string>
+
+    <string name="label_snooze_delay_none">Snooze Disabled</string>
+    <string name="label_snooze_delay_immediate">Snooze Immediately</string>
+    <string name="label_snooze_delay_one_minute">1 Minute</string>
+
+    <string name="message_change_snooze_delay_old">Snooze Delay specifies the length of time you have to wait for snoozes to become effective when you hit the daily screen time limit for apps. Please enter the Snooze Delay you would like in minutes, effective tomorrow. If you would like to snooze instantly after you hit a limit, choose "None". If you don\'t want to ever snooze your limits, choose "No Snooze".</string>
+    <string name="message_change_snooze_delay">Snooze Delay specifies the length of time you have to wait for snoozes to become effective when you hit the daily screen time limit for apps. Changes are effective tomorrow.</string>
+    <string name="hint_snooze_delay_minutes">Snooze Delay (Minutes)</string>
+    <string name="action_change_delay">Change Snooze Delay</string>
+    <string name="action_no_snooze">Disable Snoozes</string>
+    <string name="action_no_snooze_delay">No Snooze Delay</string>
+
+    <string name="toast_confirm_snooze">Your Snooze Delay of %1$s minutes will become effective tomorrow.</string>
+    <string name="toast_confirm_snooze_none">No snooze will become effective tomorrow.</string>
+    <string name="toast_confirm_snooze_disabled">Snoozes will be disabled completely effective tomorrow.</string>
+
+    <string name="action_dont_show_again">Don\'t Show Again</string>
+    <string name="action_continue">Continue</string>
+</resources>

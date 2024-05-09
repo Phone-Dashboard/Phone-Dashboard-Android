@@ -1,0 +1,3 @@
+[submodule "Passive-Data-Kit"]
+	path = Passive-Data-Kit
+	url = https://github.com/audacious-software/PassiveDataKit-Android.git

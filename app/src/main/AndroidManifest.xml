@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" tools:node="remove" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" tools:node="remove" />
+    <uses-permission android:name="android.permission.READ_SMS" tools:node="remove" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" tools:node="remove" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" tools:node="remove" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" tools:node="remove" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" tools:node="remove" />
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" tools:node="remove" />
+    <uses-permission android:name="android.permission.BLUETOOTH" tools:node="remove" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" tools:node="remove" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" tools:node="remove" />
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        android:name=".AppApplication">
+        <activity android:name=".MainActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".OnboardingActivity" android:screenOrientation="portrait" android:launchMode="singleTop" android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity" android:exported="false" />
+        <activity android:name=".SettingsActivity" android:label="@string/app_name" android:theme="@style/AppTheme" android:exported="false" />
+        <activity android:name=".SettingsAcknowledgementsActivity" android:label="@string/app_name" android:exported="false" />
+        <activity android:name=".EditBudgetActivity" android:label="@string/app_name" android:exported="false" />
+        <activity android:name=".WarningActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Transparent"
+            android:excludeFromRecents="true"
+            android:exported="false"/>
+        <activity android:name=".DatabaseActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Transparent"
+            android:excludeFromRecents="true"
+            android:exported="true"/>
+        <service android:enabled="true" android:name=".KeepAliveJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="true" />
+        <service android:enabled="true" android:name=".KeepAliveService" android:permission="android.permission.BIND_JOB_SERVICE" android:exported="true">
+            <intent-filter>
+                <action android:name="org.healthysms.diamante.KeepAliveService.ACTION_KEEP_ALIVE" />
+            </intent-filter>
+        </service>
+        <receiver android:name=".BootReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

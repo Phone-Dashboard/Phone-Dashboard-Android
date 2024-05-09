@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.preference.PreferenceCategory app:title="@string/settings_user_info">
+        <androidx.preference.Preference app:summary="@string/label_app_code" app:key="com.audacious_software.phone_dashboard.SettingsActivity.APP_CODE" />
+        <androidx.preference.Preference app:title="@string/placeholder_app_budget_status" app:summary="@string/label_app_usage_limit_function" app:key="com.audacious_software.phone_dashboard.SettingsActivity.BLOCKING_STATUS" />
+        <!-- <androidx.preference.Preference app:title="" app:summary="@string/label_app_receives_subsidy" app:key="com.audacious_software.phone_dashboard.SettingsActivity.RECEIVES_SUBSIDY" /> -->
+        <!-- <androidx.preference.Preference app:title="" app:summary="@string/label_app_blocker_type" app:key="com.audacious_software.phone_dashboard.SettingsActivity.BLOCKER_TYPE" /> -->
+        <!-- <androidx.preference.Preference app:title="" app:summary="@string/label_app_remaining_budget" app:key="com.audacious_software.phone_dashboard.SettingsActivity.REMAINING_BUDGET" /> -->
+        <androidx.preference.Preference app:title="" app:summary="@string/label_app_current_snooze_delay" app:key="com.audacious_software.phone_dashboard.SettingsActivity.SNOOZE_DELAY" />
+        <androidx.preference.Preference app:title="@string/label_app_change_snooze_delay" app:key="com.audacious_software.phone_dashboard.SettingsActivity.CHANGE_SNOOZE_DELAY" />
+        <!-- <androidx.preference.Preference app:title="" app:summary="@string/label_app_period_start" app:key="com.audacious_software.phone_dashboard.SettingsActivity.PERIOD_START" /> -->
+        <androidx.preference.Preference app:title="" app:key="com.audacious_software.phone_dashboard.SettingsActivity.TREATMENT_STATUS" />
+        <androidx.preference.Preference app:title="@string/action_refresh_study_configuration" app:key="com.audacious_software.phone_dashboard.SettingsActivity.REFRESH_STUDY_CONFIG" />
+        <!-- <androidx.preference.Preference app:title="@string/action_upload_data" app:summary="@string/summary_upload_data" app:key="com.audacious_software.phone_dashboard.SettingsActivity.UPLOAD_DATA" /> -->
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory app:title="@string/settings_app_info">
+        <androidx.preference.Preference app:title="@string/placeholder_app_version" app:summary="@string/label_app_version" app:key="com.audacious_software.phone_dashboard.SettingsActivity.APP_VERSION" />
+        <androidx.preference.Preference app:title="@string/settings_irb_number" app:summary="@string/settings_irb_summary" />
+    </androidx.preference.PreferenceCategory>
+    <androidx.preference.PreferenceCategory app:title="@string/settings_more_information">
+        <androidx.preference.Preference app:title="@string/settings_acknowledgements" app:key="com.audacious_software.phone_dashboard.SettingsActivity.ACKNOWLEDGEMENTS" />
+    </androidx.preference.PreferenceCategory>
+    <!-- <androidx.preference.PreferenceCategory app:title="@string/settings_data_actions"> -->
+        <androidx.preference.Preference app:summary="@string/action_transmit_data" app:key="com.audacious_software.phone_dashboard.SettingsActivity.TRANSMIT_DATA" />
+        <!-- Preference app:title="@string/action_data_disclosure" app:key="com.audacious_software.phone_dashboard.SettingsActivity.DATA_DISCLOSURE" /> -->
+        <!-- <androidx.preference.Preference app:title="@string/action_view_data_stream" app:key="com.audacious_software.phone_dashboard.SettingsActivity.DATA_STREAM" /> -->
+    <!-- </androidx.preference.PreferenceCategory> -->
+</androidx.preference.PreferenceScreen>

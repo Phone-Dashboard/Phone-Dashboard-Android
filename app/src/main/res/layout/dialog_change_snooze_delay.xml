@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="24dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/black"
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:text="@string/message_change_snooze_delay"/>
+    <CheckBox android:id="@+id/check_dont_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/action_dont_show_again" />
+    <!-- <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/black"
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:text="@string/message_select_limit_zero"/> -->
+</LinearLayout>

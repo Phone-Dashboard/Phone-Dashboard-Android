@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "743202418050",
+    "firebase_url": "https://nyu-phone-dashboard.firebaseio.com",
+    "project_id": "nyu-phone-dashboard",
+    "storage_bucket": "nyu-phone-dashboard.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743202418050:android:c4663526a459c777",
+        "android_client_info": {
+          "package_name": "com.audacious_software.phone_dashboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "743202418050-i5kqmqeajca4junjlb4fcgoj1c60qgbm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "CHANGEME"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "743202418050-i5kqmqeajca4junjlb4fcgoj1c60qgbm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

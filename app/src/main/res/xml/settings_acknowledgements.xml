@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.preference.Preference app:title="@string/creator_phil_jay" app:summary="@string/role_mp_android_chart">
+        <intent android:action="android.intent.action.VIEW"
+            android:data="@string/uri_mp_android_chart" />
+    </androidx.preference.Preference>
+    <androidx.preference.Preference app:title="@string/creator_square" app:summary="@string/role_ok_http">
+        <intent android:action="android.intent.action.VIEW"
+            android:data="@string/uri_ok_http" />
+    </androidx.preference.Preference>
+    <androidx.preference.Preference app:title="@string/creator_apache" app:summary="@string/role_commons_libs">
+        <intent android:action="android.intent.action.VIEW"
+            android:data="@string/uri_commons_libs" />
+    </androidx.preference.Preference>
+    <androidx.preference.Preference app:title="@string/creator_faster_xml" app:summary="@string/role_jackson_xml">
+        <intent android:action="android.intent.action.VIEW"
+            android:data="@string/uri_jackson_xml" />
+    </androidx.preference.Preference>
+    <androidx.preference.Preference app:title="@string/creator_salomon_brys" app:summary="@string/role_anr_watchdog">
+        <intent android:action="android.intent.action.VIEW"
+            android:data="@string/uri_anr_watchdog" />
+    </androidx.preference.Preference>
+    <androidx.preference.Preference app:title="@string/creator_audacious_software" app:summary="@string/role_passive_data_kit">
+        <intent android:action="android.intent.action.VIEW"
+            android:data="@string/uri_passive_data_kit" />
+    </androidx.preference.Preference>
+</androidx.preference.PreferenceScreen>
