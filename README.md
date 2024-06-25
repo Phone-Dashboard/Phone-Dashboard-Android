@@ -1,5 +1,7 @@
 # Phone Dashboard - Android Mobile App
 
+*These instructions assume basic competency with developing and distributing Android apps. If you do not have this experience, please seek out qualified assistance.*
+
 This document describes how to build and deploy Phone Dashboard, the mobile app component of the larger [Phone Dashboard](https://github.com/Phone-Dashboard) platform, which consists of this app and one or more data collection servers (which are not covered here - see [the server software repository](https://github.com/lenasong/Phone-Dashboard-Django)).
 
 To build Phone Dashboard, a local installation of the Android software development kit is required. On desktop platforms, the quickest way to get started is to [download and install Android Studio](https://developer.android.com/studio).
@@ -19,3 +21,5 @@ In the `app/src/main/res/values/` folder, rename the `keys.xml-template` file to
 In the `app/src/main/res/values/strings.xml` file in that same folder, configure the `url_phone_dashboard_configuration`, `url_phone_study_configuration`, and `url_phone_enroll` parameters to point to analagous locations on [your local Phone Dashboard data collection server](https://github.com/Phone-Dashboard/Phone-Dashboard-Django). If you'd like, you may also rename the app itself by changing the `app_name` parameter.
 
 Once these steps are complete, you should be able to build a debug version for testing on a physical device. If you seek to distribute the application on the Google Play Store, you will need [an Android keystore](https://developer.android.com/studio/publish/app-signing) set up for signing. If you do this, update the `gradle.properties` file accordingly.
+
+*Please send any updates, corrections, or questions to [chris@audacious-software.com](mailto:chris@audacious-software.com). This is an early iteration of this document and it is expected to change over time.*
