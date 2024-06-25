@@ -6,7 +6,7 @@ To build Phone Dashboard, a local installation of the Android software developme
 
 Once Android Studio is installed, clone this repository to a local folder and be sure that the Passive Data Kit Git submodule is also checked out and populated:
 
-    `git submodule init; git submodule update`
+    git submodule init; git submodule update
 
 In the project home directory, copy the `empty.properties` file to `gradle.properties`. Update the `STORE_FILE`, `STORE_PASSWORD`, `KEY_ALIAS`, and `KEY_PASSWORD` variables to contain your local Android signing key information
 
