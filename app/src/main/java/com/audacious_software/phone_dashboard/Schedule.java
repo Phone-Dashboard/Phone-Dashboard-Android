@@ -356,10 +356,14 @@ public class Schedule implements Generators.GeneratorUpdatedListener {
         KeepAliveService.enqueueWork(this.mContext, KeepAliveService.class, KeepAliveService.JOB_ID, fireIntent);
     }
 
-    public void setUserId(final String userId) {
+        public void setUserId(final String userId) {
+            this.setUserId(userId, false);
+        }
+
+        public void setUserId(final String userId, boolean skipInitialization) {
         final Schedule me = this;
 
-        if (userId != null && this.mFetchingConfig == false && this.mTransmitters.size() == 0) {
+        if (userId != null && this.mFetchingConfig == false && (this.mTransmitters.size() == 0 || skipInitialization)) {
             this.mFetchingConfig = true;
 
             OkHttpClient client = new OkHttpClient();
@@ -383,7 +387,9 @@ public class Schedule implements Generators.GeneratorUpdatedListener {
                 public void onFailure(Call call, IOException e) {
                     me.mFetchingConfig = false;
 
-                    me.start(userId);
+                    if (skipInitialization == false) {
+                        me.start(userId);
+                    }
                 }
 
                 @Override
@@ -400,7 +406,11 @@ public class Schedule implements Generators.GeneratorUpdatedListener {
                         e.putString(Schedule.SAVED_CONFIGURATION, config.toString(2));
                         e.apply();
 
-                        me.start(userId);
+                        PassiveDataKit.getInstance(me.mContext).updateGenerators(config);
+
+                        if (skipInitialization == false) {
+                            me.start(userId);
+                        }
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }

@@ -4,6 +4,7 @@
         <item>com.audacious_software.passive_data_kit.generators.device.Battery</item>
         <item>com.audacious_software.passive_data_kit.generators.device.ScreenState</item>
         <item>com.audacious_software.passive_data_kit.generators.device.ForegroundApplication</item>
+        <item>com.audacious_software.passive_data_kit.generators.device.UsageStatsGenerator</item>
         <item>com.audacious_software.passive_data_kit.generators.diagnostics.SystemStatus</item>
         <item>com.audacious_software.passive_data_kit.generators.device.User</item>
         <item>com.audacious_software.passive_data_kit.generators.device.NotificationEvents</item>

@@ -1,12 +1,15 @@
 <resources>
+    <!-- Configure the values below to point to your Phone Dashboard enrollment server. -->
+
+    <string name="url_phone_dashboard_configuration">https://phone-dashboard.audacious-software.com/data/app-config.json</string>
+    <string name="url_phone_study_configuration">https://phone-dashboard.audacious-software.com/study/config.json</string>
+    <string name="url_phone_enroll">https://phone-dashboard.audacious-software.com/study/enroll-email.json</string>
+
     <string name="app_name">Phone Dashboard</string>
 
     <string name="action_data_stream">Data Stream</string>
     <string name="action_transmit_data">Transmit Data</string>
 
-    <string name="url_phone_dashboard_configuration">https://phone-dashboard.audacious-software.com/data/app-config.json</string>
-    <string name="url_phone_study_configuration">https://phone-dashboard.audacious-software.com/study/config.json</string>
-    <string name="url_phone_enroll">https://phone-dashboard.audacious-software.com/study/enroll-email.json</string>
 
     <string name="url_opt_out">https://phone-dashboard.audacious-software.com/study/deactivate/%1$s.json</string>
     <string name="url_opt_in">https://phone-dashboard.audacious-software.com/study/activate/%1$s.json</string>

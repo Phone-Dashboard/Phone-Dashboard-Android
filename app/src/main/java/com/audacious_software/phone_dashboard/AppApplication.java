@@ -152,6 +152,8 @@ public class AppApplication extends Application implements PassiveDataKitApplica
         e.putString(AppApplication.IDENTIFIER, identifier);
         e.apply();
 
+        Schedule.getInstance(this).setUserId(identifier);
+
         AppCenter.setUserId(identifier);
     }
 
@@ -455,6 +457,12 @@ public class AppApplication extends Application implements PassiveDataKitApplica
 
                     try {
                         JSONObject config = new JSONObject(responseBody);
+
+                        if (config.has("identifier")) {
+                            me.setIdentifier(config.getString("identifier"));
+
+                            Schedule.getInstance(me).setUserId(me.getIdentifier(), true);
+                        }
 
                         if (config.has("receives_subsidy")) {
                             me.setReceivesSubsidy(config.getBoolean("receives_subsidy"));
